@@ -1,0 +1,39 @@
+.pagination-request__wrapper,
+.pagination__wrapper{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    padding: 0.2em 0;
+    z-index: 3;
+    background-color: $color-bg-main;
+    @include display-flex-row;
+    text-align: center;
+    flex-direction: column;
+    border: 1px solid $color-shadow;
+}
+.pagination-request__text{
+@extend %text-small;
+}
+.pagination-request__btn{
+    @extend %btn;
+    width: auto;
+    height: auto;
+    //padding: 0.2em 0.3em;
+    font-size: 0.7rem;
+}
+.pagination__wrapper{
+ text-align: center;
+    display: none;
+}
+.btn-prev,
+.btn-next{
+    margin: 0 0.5em;
+    @extend %btn;
+    width: auto;
+}
+@media screen and(min-width:500px) {
+    .pagination-request__wrapper{
+     flex-direction: row;
+    }
+}

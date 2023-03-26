@@ -1,0 +1,48 @@
+
+.cards__wrapper{
+    @include display-flex-row();
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+.small__card-wrapper{
+    width: 30%;
+    height: auto;
+    min-width: 200px;
+    background-color: $color-bg-main;
+    border: 1px solid $color-shadow;
+    border-radius: 0.5em;
+    margin: 40px 20px;
+    &:hover{
+        border:1px solid $color-bg-1;
+    }
+}
+.card__img-wrapper{
+    position: relative;
+    width: 90%;
+    padding-bottom: 90%;
+    height: 0;
+    margin: 0.5em auto 0;
+}
+.small__card-img{
+    display: block;
+    width: 100%;
+    //height: auto;
+    position: absolute;
+    top:-20px;
+    //left: 20px;
+    box-shadow: 0.5em 0.5em 0.5em $color-shadow;
+    border-radius: 0.5em;
+    &:hover{
+        @extend %hover;
+    }
+    
+}
+.small__card-title{
+@extend %text-bold;
+margin: 1em auto;
+text-align: center;
+
+}

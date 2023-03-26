@@ -1,0 +1,81 @@
+
+
+$color-bg-main: #faf5f5;
+$color-bg-white: #ffffff;
+$color-bg-1:#69055c;
+$color-shadow: #aaa7a7;
+$color-shadow-hover: #818181;
+$color-text-main:#000000;
+
+
+@mixin display-flex-row{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
+}
+@mixin flex-row-start{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+}
+%hover{
+    -webkit-box-shadow: 0.2em 0.2em 0.2em $color-shadow;
+            box-shadow: 0.2em 0.2em 0.2em $color-shadow;
+}
+%shadow{
+    -webkit-box-shadow: 0.5em 0.5em 0.5em $color-shadow;
+            box-shadow: 0.5em 0.5em 0.5em $color-shadow;
+
+}
+%btn{
+    width: 3rem;
+    height: 3rem;
+    background-color: $color-bg-1;
+    color: $color-bg-white;
+    padding: 0.3em 0.8em;
+    cursor: pointer;
+    border: 1px solid $color-bg-white;
+    border-radius: 0.3em;
+    @extend %shadow;
+    &:hover{
+       @extend %hover;
+    }
+    &:active{
+        border-color: $color-shadow-hover;
+    }
+}
+%text-title{
+    font-size: 2rem;
+    color:$color-text-main;
+    font-weight: 700;
+}
+%text-bold{
+    font-size: 1.2rem;
+    color:$color-text-main;
+    font-weight: 700;
+}
+%text-subtitle{
+    font-size: 1.2rem;
+    color:$color-text-main;
+    font-weight: 700;
+}
+%text{
+    font-size: 0.9rem;
+    color:$color-text-main;
+    font-weight: 400;
+}
+%text-small{
+    font-size: 0.6rem;
+    color:$color-text-main;
+    font-weight: 400;
+}
