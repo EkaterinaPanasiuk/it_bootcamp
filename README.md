@@ -1,7 +1,7 @@
 # IT_bootcamp
 
 - The web application presents a gallery of **Rick and Morty** characters. Implemented using the **MVC** pattern.
-- This is a tutorial project on working with data based on [The Rick and Morty API] https://rickandmortyapi.com/
+- This is a tutorial project on working with data based on [The Rick and Morty API](https://rickandmortyapi.com/)
 *https://ekaterinapanasiuk.github.io/it_bootcamp/
 
 - Instructions for building and running the project:
